@@ -74,9 +74,9 @@ int __init(int argc,char **argv)
     if(!common_ticktime__)
         common_ticktime__ = 1000000;
 
+    %(init_calls)s
     config_init__();
     __init_debug();
-    %(init_calls)s
     return res;
 }
 /*
